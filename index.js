@@ -10,5 +10,5 @@ app.get('/', function(request, response){
     response.send("Counter = "+ counter);
 }); 
 
-app.post('/', (req, res)=>{counter=counter+2; res.send("counter increased")});
+app.post('/', (req, res)=>{counter++; res.send("counter increased")});
 
